@@ -53,7 +53,7 @@ public final class IceologerEntity extends SpellcastingIllagerEntity
 	}
 
 	public static Builder createIceologerAttributes() {
-		return HostileEntity.createHostileAttributes().add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5D).add(EntityAttributes.GENERIC_FOLLOW_RANGE, 18.0D).add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0D);
+		return HostileEntity.createHostileAttributes().add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5D).add(EntityAttributes.GENERIC_FOLLOW_RANGE, 18.0D).add(EntityAttributes.GENERIC_MAX_HEALTH, 50.0D);
 	}
 
 	public SoundEvent getCelebratingSound() {
