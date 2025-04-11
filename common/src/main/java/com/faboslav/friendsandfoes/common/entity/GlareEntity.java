@@ -293,7 +293,7 @@ public final class GlareEntity extends TameableEntity implements Flutterer, Anim
 
 	public static Builder createGlareAttributes() {
 		return MobEntity.createMobAttributes()
-			.add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0D)
+			.add(EntityAttributes.GENERIC_MAX_HEALTH, 16.0D)
 			.add(EntityAttributes.GENERIC_FLYING_SPEED, MOVEMENT_SPEED)
 			.add(EntityAttributes.GENERIC_MOVEMENT_SPEED, MOVEMENT_SPEED)
 			.add(EntityAttributes.GENERIC_FOLLOW_RANGE, 48.0D);
