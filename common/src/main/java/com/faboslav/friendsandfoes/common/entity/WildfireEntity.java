@@ -35,13 +35,13 @@ public final class WildfireEntity extends HostileEntity
 	private float damageAmountCounter = 0.0F;
 
 	public static final float GENERIC_ATTACK_DAMAGE = 8.0F;
-	public static final float GENERIC_FOLLOW_RANGE = 32.0F;
+	public static final float GENERIC_FOLLOW_RANGE = 36.0F;
 
 	public static final int DEFAULT_ACTIVE_SHIELDS_COUNT = 4;
-	public static final int DEFAULT_TICKS_UNTIL_SHIELD_REGENERATION = 300;
-	public static final int DEFAULT_SUMMONED_BLAZES_COUNT = 0;
+	public static final int DEFAULT_TICKS_UNTIL_SHIELD_REGENERATION = 240;
+	public static final int DEFAULT_SUMMONED_BLAZES_COUNT = 1;
 
-	public static final int MAXIMUM_SUMMONED_BLAZES_COUNT = 2;
+	public static final int MAXIMUM_SUMMONED_BLAZES_COUNT = 3;
 
 	private static final String ACTIVE_SHIELDS_NBT_NAME = "ActiveShieldsCount";
 	private static final String TICKS_UNTIL_SHIELD_REGENERATION_NBT_NAME = "TicksUntilShieldRegeneration";
@@ -57,7 +57,7 @@ public final class WildfireEntity extends HostileEntity
 		this.setPathfindingPenalty(PathNodeType.LAVA, 8.0F);
 		this.setPathfindingPenalty(PathNodeType.DANGER_FIRE, 0.0F);
 		this.setPathfindingPenalty(PathNodeType.DAMAGE_FIRE, 0.0F);
-		this.experiencePoints = 10;
+		this.experiencePoints = 42;
 	}
 
 	@Nullable
@@ -105,8 +105,8 @@ public final class WildfireEntity extends HostileEntity
 	public static DefaultAttributeContainer.Builder createWildfireAttributes() {
 		return HostileEntity.createHostileAttributes()
 			.add(EntityAttributes.GENERIC_MAX_HEALTH, 120.0F)
-			.add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0F)
-			.add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 32.0F)
+			.add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.25F)
+			.add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 36.0F)
 			.add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.23000000417232513)
 			.add(EntityAttributes.GENERIC_FOLLOW_RANGE, GENERIC_FOLLOW_RANGE)
 			.add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 1.0F);
